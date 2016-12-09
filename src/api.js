@@ -21,7 +21,7 @@ Object.keys(methods).forEach((name) => {
   Api.prototype[name] = function (params = {}, uriParams = {}) {
     const valid = method
       .parameters
-      .filter(param => param.required && !params[param.name]);
+      .filter(param => param.required && typeof params[param.name] === 'undefined');
 
     if (valid.length > 0) {
       return Promise.reject(`Missing require fields: ${valid.map(param => param.name).join()}`);
