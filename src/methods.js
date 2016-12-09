@@ -15,9 +15,9 @@ export default {
         description: 'The id of the stream whose alarm callbacks we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createAlarmCallback: {
     path: '/streams/{streamid}/alarmcallbacks',
@@ -30,16 +30,16 @@ export default {
         description: 'The stream id this new alarm callback belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateAlarmCallbackRequest'
-      }
-    ]
+        type: 'CreateAlarmCallbackRequest',
+      },
+    ],
   },
   getAlarmCallbacksAvailable: {
     path: '/streams/{streamid}/alarmcallbacks/available',
@@ -52,9 +52,9 @@ export default {
         description: 'The id of the stream whose alarm callbacks we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getAlarmCallback: {
     path: '/streams/{streamid}/alarmcallbacks/{alarmCallbackId}',
@@ -67,16 +67,16 @@ export default {
         description: 'The id of the stream whose alarm callbacks we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'alarmCallbackId',
         description: 'The alarm callback id we are getting',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateAlarmCallback: {
     path: '/streams/{streamid}/alarmcallbacks/{alarmCallbackId}',
@@ -89,23 +89,23 @@ export default {
         description: 'The stream id this alarm callback belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'alarmCallbackId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'Map'
-      }
-    ]
+        type: 'Map',
+      },
+    ],
   },
   removeAlarmCallback: {
     path: '/streams/{streamid}/alarmcallbacks/{alarmCallbackId}',
@@ -118,16 +118,16 @@ export default {
         description: 'The stream id this alarm callback belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'alarmCallbackId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createBlacklistFilter: {
     path: '/filters/blacklist',
@@ -140,16 +140,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'FilterDescription'
-      }
-    ]
+        type: 'FilterDescription',
+      },
+    ],
   },
   getBlacklistFilters: {
     path: '/filters/blacklist',
     summary: 'Get all blacklist filters',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getBlacklistFilter: {
     path: '/filters/blacklist/{filterId}',
@@ -162,9 +162,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateBlacklistFilter: {
     path: '/filters/blacklist/{filterId}',
@@ -177,16 +177,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filterEntry',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'FilterDescription'
-      }
-    ]
+        type: 'FilterDescription',
+      },
+    ],
   },
   removeBlacklistFilter: {
     path: '/filters/blacklist/{filterId}',
@@ -199,9 +199,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createDashboard: {
     path: '/dashboards',
@@ -214,16 +214,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateDashboardRequest'
-      }
-    ]
+        type: 'CreateDashboardRequest',
+      },
+    ],
   },
   getDashboards: {
     path: '/dashboards',
     summary: 'Get a list of all dashboards and all configurations of their widgets.',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getDashboard: {
     path: '/dashboards/{dashboardId}',
@@ -236,9 +236,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateDashboard: {
     path: '/dashboards/{dashboardId}',
@@ -251,16 +251,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'UpdateDashboardRequest'
-      }
-    ]
+        type: 'UpdateDashboardRequest',
+      },
+    ],
   },
   removeDashboard: {
     path: '/dashboards/{dashboardId}',
@@ -273,9 +273,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateDashboardPositions: {
     path: '/dashboards/{dashboardId}/positions',
@@ -288,16 +288,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'WidgetPositionsRequest'
-      }
-    ]
+        type: 'WidgetPositionsRequest',
+      },
+    ],
   },
   createDashboardWidget: {
     path: '/dashboards/{dashboardId}/widgets',
@@ -310,16 +310,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'AddWidgetRequest'
-      }
-    ]
+        type: 'AddWidgetRequest',
+      },
+    ],
   },
   updateDashboardWidget: {
     path: '/dashboards/{dashboardId}/widgets/{widgetId}',
@@ -332,23 +332,23 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'widgetId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'AddWidgetRequest'
-      }
-    ]
+        type: 'AddWidgetRequest',
+      },
+    ],
   },
   removeDashboardWidget: {
     path: '/dashboards/{dashboardId}/widgets/{widgetId}',
@@ -361,16 +361,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'widgetId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateDashboardWidgetCacheTime: {
     path: '/dashboards/{dashboardId}/widgets/{widgetId}/cachetime',
@@ -383,23 +383,23 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'widgetId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'UpdateWidgetRequest'
-      }
-    ]
+        type: 'UpdateWidgetRequest',
+      },
+    ],
   },
   updateDashboardWidgetDescription: {
     path: '/dashboards/{dashboardId}/widgets/{widgetId}/description',
@@ -412,23 +412,23 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'widgetId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'UpdateWidgetRequest'
-      }
-    ]
+        type: 'UpdateWidgetRequest',
+      },
+    ],
   },
   getDashboardWidgetValue: {
     path: '/dashboards/{dashboardId}/widgets/{widgetId}/value',
@@ -441,23 +441,23 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'widgetId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getCountTotal: {
     path: '/count/total',
     summary: 'Total number of messages in all your indices.',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   createInputExtractor: {
     path: '/system/inputs/{inputId}/extractors',
@@ -470,16 +470,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateExtractorRequest'
-      }
-    ]
+        type: 'CreateExtractorRequest',
+      },
+    ],
   },
   getInputExtractors: {
     path: '/system/inputs/{inputId}/extractors',
@@ -492,9 +492,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getInputExtractor: {
     path: '/system/inputs/{inputId}/extractors/{extractorId}',
@@ -507,16 +507,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'extractorId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateInputExtractorOrder: {
     path: '/system/inputs/{inputId}/extractors/order',
@@ -529,16 +529,16 @@ export default {
         description: 'Persist ID (!) of input.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'OrderExtractorsRequest'
-      }
-    ]
+        type: 'OrderExtractorsRequest',
+      },
+    ],
   },
   updateInputExtractor: {
     path: '/system/inputs/{inputId}/extractors/{extractorId}',
@@ -551,23 +551,23 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'extractorId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateExtractorRequest'
-      }
-    ]
+        type: 'CreateExtractorRequest',
+      },
+    ],
   },
   removeInputExtractor: {
     path: '/system/inputs/{inputId}/extractors/{extractorId}',
@@ -580,16 +580,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'extractorId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getAlerts: {
     path: '/streams/{streamId}/alerts',
@@ -602,16 +602,16 @@ export default {
         description: 'The stream id this new alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'since',
         description: 'Optional parameter to define a lower date boundary. (UNIX timestamp)',
         required: false,
         paramType: 'query',
-        type: 'Integer'
-      }
-    ]
+        type: 'Integer',
+      },
+    ],
   },
   getAlertsCheck: {
     path: '/streams/{streamId}/alerts/check',
@@ -624,9 +624,9 @@ export default {
         description: 'The ID of the stream to check.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createAlertReceiver: {
     path: '/streams/{streamId}/alerts/receivers',
@@ -639,23 +639,23 @@ export default {
         description: 'The stream id this new alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'entity',
         description: 'Name/ID of user or email address to add as alert receiver.',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'type',
         description: 'Type: users or emails',
         required: true,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   removeAlertReceiver: {
     path: '/streams/{streamId}/alerts/receivers',
@@ -668,23 +668,23 @@ export default {
         description: 'The stream id this new alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'entity',
         description: 'Name/ID of user or email address to remove from alert receivers.',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'type',
         description: 'Type: users or emails',
         required: true,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   testAlertSendDummy: {
     path: '/streams/{streamId}/alerts/sendDummyAlert',
@@ -697,9 +697,9 @@ export default {
         description: 'The stream id this new alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createAlertCondition: {
     path: '/streams/{streamId}/alerts/conditions',
@@ -712,16 +712,16 @@ export default {
         description: 'The stream id this new alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateConditionRequest'
-      }
-    ]
+        type: 'CreateConditionRequest',
+      },
+    ],
   },
   getAlertConditions: {
     path: '/streams/{streamId}/alerts/conditions',
@@ -734,9 +734,9 @@ export default {
         description: 'The stream id this new alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateAlertCondition: {
     path: '/streams/{streamId}/alerts/conditions/{conditionId}',
@@ -749,23 +749,23 @@ export default {
         description: 'The stream id the alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'conditionId',
         description: 'The alert condition id.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateConditionRequest'
-      }
-    ]
+        type: 'CreateConditionRequest',
+      },
+    ],
   },
   removeAlertCondition: {
     path: '/streams/{streamId}/alerts/conditions/{conditionId}',
@@ -778,16 +778,16 @@ export default {
         description: 'The stream id this new alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'conditionId',
         description: 'The stream id this new alert condition belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getSystemFailures: {
     path: '/system/indexer/failures',
@@ -800,16 +800,16 @@ export default {
         description: 'Limit',
         required: true,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'offset',
         description: 'Offset',
         required: true,
         paramType: 'query',
-        type: 'Integer'
-      }
-    ]
+        type: 'Integer',
+      },
+    ],
   },
   getFailuresCount: {
     path: '/system/indexer/failures/count',
@@ -822,23 +822,23 @@ export default {
         description: 'ISO8601 date',
         required: true,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getClusterHealth: {
     path: '/system/indexer/cluster/health',
     summary: 'Get cluster and shard health overview',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getClusterName: {
     path: '/system/indexer/cluster/name',
     summary: 'Get the cluster name',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   analyzeMessage: {
     path: '/messages/{index}/analyze',
@@ -851,16 +851,16 @@ export default {
         description: 'The index the message containing the string is stored in.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'string',
         description: 'The string to analyze.',
         required: true,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getMessage: {
     path: '/messages/{index}/{messageId}',
@@ -873,30 +873,30 @@ export default {
         description: 'The index this message is stored in.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'messageId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getIndicesClosed: {
     path: '/system/indexer/indices/closed',
     summary: 'Get a list of closed indices that can be reopened.',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getIndicesReopened: {
     path: '/system/indexer/indices/reopened',
     summary: 'Get a list of reopened indices, which will not be cleaned by retention cleaning',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   removeIndex: {
     path: '/system/indexer/indices/{index}',
@@ -909,9 +909,9 @@ export default {
         description: '',
         required: false,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getIndices: {
     path: '/system/indexer/indices/{index}',
@@ -924,9 +924,9 @@ export default {
         description: '',
         required: false,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   closeIndex: {
     path: '/system/indexer/indices/{index}/close',
@@ -939,9 +939,9 @@ export default {
         description: '',
         required: false,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   reopenIndex: {
     path: '/system/indexer/indices/{index}/reopen',
@@ -954,9 +954,9 @@ export default {
         description: '',
         required: false,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchKeyword: {
     path: '/search/universal/keyword',
@@ -969,51 +969,51 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'keyword',
         description: 'Range keyword',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'limit',
         description: 'Maximum number of messages to return.',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'offset',
         description: 'Offset',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'fields',
         description: 'Comma separated list of fields to return',
         required: false,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'sort',
         description: 'Sorting (field:asc / field:desc)',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchKeywordFieldHistogram: {
     path: '/search/universal/keyword/fieldhistogram',
@@ -1026,37 +1026,37 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'field',
         description: 'Field of whose values to get the histogram of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'interval',
         description: 'Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'keyword',
         description: 'Range keyword',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchKeywordHistogram: {
     path: '/search/universal/keyword/histogram',
@@ -1069,30 +1069,30 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'interval',
         description: 'Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'keyword',
         description: 'Range keyword',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchKeywordStats: {
     path: '/search/universal/keyword/stats',
@@ -1105,30 +1105,30 @@ export default {
         description: 'Message field of numeric type to return statistics for',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'keyword',
         description: 'Range keyword',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchKeywordTerms: {
     path: '/search/universal/keyword/terms',
@@ -1141,37 +1141,37 @@ export default {
         description: 'Message field of to return terms of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'size',
         description: 'Maximum number of terms to return',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'keyword',
         description: 'Range keyword',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchKeywordTermsStats: {
     path: '/search/universal/keyword/termsstats',
@@ -1184,51 +1184,51 @@ export default {
         description: 'Message field of to return terms of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'value_field',
         description: 'Value field used for computation',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'order',
         description: 'What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'size',
         description: 'Maximum number of terms to return',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'keyword',
         description: 'Keyword timeframe',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchAbsolute: {
     path: '/search/universal/absolute',
@@ -1241,51 +1241,51 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'from',
         description: 'Timerange start. See description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'to',
         description: 'Timerange end. See description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'limit',
         description: 'Maximum number of messages to return.',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'offset',
         description: 'Offset',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'fields',
         description: 'Comma separated list of fields to return',
         required: true,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchAbsoluteFieldHistogram: {
     path: '/search/universal/absolute/fieldhistogram',
@@ -1298,44 +1298,44 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'field',
         description: 'Field of whose values to get the histogram of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'interval',
         description: 'Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'from',
         description: 'Timerange start. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'to',
         description: 'Timerange end. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchAbsoluteHistogram: {
     path: '/search/universal/absolute/histogram',
@@ -1348,37 +1348,37 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'interval',
         description: 'Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'from',
         description: 'Timerange start. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'to',
         description: 'Timerange end. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchAbsoluteStats: {
     path: '/search/universal/absolute/stats',
@@ -1391,37 +1391,37 @@ export default {
         description: 'Message field of numeric type to return statistics for',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'from',
         description: 'Timerange start. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'to',
         description: 'Timerange end. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchAbsoluteTerms: {
     path: '/search/universal/absolute/terms',
@@ -1434,44 +1434,44 @@ export default {
         description: 'Message field of to return terms of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'size',
         description: 'Maximum number of terms to return',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'from',
         description: 'Timerange start. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'to',
         description: 'Timerange end. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchAbsoluteTermsStats: {
     path: '/search/universal/absolute/termsstats',
@@ -1484,58 +1484,58 @@ export default {
         description: 'Message field of to return terms of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'value_field',
         description: 'Value field used for computation',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'order',
         description: 'What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'size',
         description: 'Maximum number of terms to return',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'from',
         description: 'Timerange start. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'to',
         description: 'Timerange end. See search method description for date format',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchRelative: {
     path: '/search/universal/relative',
@@ -1548,44 +1548,44 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'range',
         description: 'Relative timeframe to search in. See method description.',
         required: true,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'limit',
         description: 'Maximum number of messages to return.',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'offset',
         description: 'Offset',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'fields',
         description: 'Comma separated list of fields to return',
         required: true,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchRelativeFieldHistogram: {
     path: '/search/universal/relative/fieldhistogram',
@@ -1598,37 +1598,37 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'field',
         description: 'Field of whose values to get the histogram of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'interval',
         description: 'Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'range',
         description: 'Relative timeframe to search in. See search method description.',
         required: true,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchRelativeHistogram: {
     path: '/search/universal/relative/histogram',
@@ -1641,30 +1641,30 @@ export default {
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'interval',
         description: 'Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'range',
         description: 'Relative timeframe to search in. See search method description.',
         required: true,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchRelativeStats: {
     path: '/search/universal/relative/stats',
@@ -1677,30 +1677,30 @@ export default {
         description: 'Message field of numeric type to return statistics for',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'range',
         description: 'Relative timeframe to search in. See search method description.',
         required: true,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchRelativeTerms: {
     path: '/search/universal/relative/terms',
@@ -1713,37 +1713,37 @@ export default {
         description: 'Message field of to return terms of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'size',
         description: 'Maximum number of terms to return',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'range',
         description: 'Relative timeframe to search in. See search method description.',
         required: true,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   searchRelativeTermsStats: {
     path: '/search/universal/relative/termsstats',
@@ -1756,51 +1756,51 @@ export default {
         description: 'Message field of to return terms of',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'value_field',
         description: 'Value field used for computation',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'order',
         description: 'What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'query',
         description: 'Query (Lucene syntax)',
         required: true,
         paramType: 'query',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'size',
         description: 'Maximum number of terms to return',
         required: false,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'range',
         description: 'Relative timeframe to search in. See search method description.',
         required: true,
         paramType: 'query',
-        type: 'Integer'
+        type: 'Integer',
       },
       {
         name: 'filter',
         description: 'Filter',
         required: false,
         paramType: 'query',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getSources: {
     path: '/sources',
@@ -1813,9 +1813,9 @@ export default {
         description: 'Relative timeframe to search in. See method description.',
         required: true,
         paramType: 'query',
-        type: 'Integer'
-      }
-    ]
+        type: 'Integer',
+      },
+    ],
   },
   createStreamOutput: {
     path: '/streams/{streamid}/outputs',
@@ -1828,16 +1828,16 @@ export default {
         description: 'The id of the stream whose outputs we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'AddOutputRequest'
-      }
-    ]
+        type: 'AddOutputRequest',
+      },
+    ],
   },
   getStreamOutputs: {
     path: '/streams/{streamid}/outputs',
@@ -1850,9 +1850,9 @@ export default {
         description: 'The id of the stream whose outputs we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getStreamOutput: {
     path: '/streams/{streamid}/outputs/{outputId}',
@@ -1865,16 +1865,16 @@ export default {
         description: 'The id of the stream whose outputs we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'outputId',
         description: 'The id of the output we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   removeStreamOutput: {
     path: '/streams/{streamid}/outputs/{outputId}',
@@ -1887,37 +1887,37 @@ export default {
         description: 'The id of the stream whose outputs we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'outputId',
         description: 'The id of the output that should be deleted',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getSystem: {
     path: '/system',
     summary: 'Get system overview',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getJVM: {
     path: '/system/jvm',
     summary: 'Get JVM information',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getThreadDump: {
     path: '/system/threaddump',
     summary: 'Get a thread dump',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   changeCollector: {
     path: '/system/collectors/{collectorId}',
@@ -1930,23 +1930,23 @@ export default {
         description: 'The collector id this collector is registering as.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CollectorRegistrationRequest'
-      }
-    ]
+        type: 'CollectorRegistrationRequest',
+      },
+    ],
   },
   getNodeThis: {
     path: '/system/cluster/node',
     summary: 'Information about this node.',
     notes: 'This is returning information of this node in context to its state in the cluster. Use the system API of the node itself to get system information.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getNodes: {
     path: '/system/cluster/nodes',
@@ -1959,9 +1959,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getNode: {
     path: '/system/cluster/nodes/{nodeId}',
@@ -1974,9 +1974,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createBundle: {
     path: '/system/bundles',
@@ -1989,16 +1989,16 @@ export default {
         description: 'Content pack',
         required: true,
         paramType: 'body',
-        type: 'ConfigurationBundle'
-      }
-    ]
+        type: 'ConfigurationBundle',
+      },
+    ],
   },
   getBundles: {
     path: '/system/bundles',
     summary: 'List available content packs',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getBundle: {
     path: '/system/bundles/{bundleId}',
@@ -2011,9 +2011,9 @@ export default {
         description: 'Content pack ID',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   exportBundles: {
     path: '/system/bundles/export',
@@ -2026,9 +2026,9 @@ export default {
         description: 'Export content pack',
         required: true,
         paramType: 'body',
-        type: 'ExportBundle'
-      }
-    ]
+        type: 'ExportBundle',
+      },
+    ],
   },
   updateBundle: {
     path: '/system/bundles/{bundleId}',
@@ -2041,16 +2041,16 @@ export default {
         description: 'Content pack ID',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'Request body',
         description: 'Content pack',
         required: true,
         paramType: 'body',
-        type: 'ConfigurationBundle'
-      }
-    ]
+        type: 'ConfigurationBundle',
+      },
+    ],
   },
   removeBundle: {
     path: '/system/bundles/{bundleId}',
@@ -2063,9 +2063,9 @@ export default {
         description: 'Content pack ID',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   applyBundle: {
     path: '/system/bundles/{bundleId}/apply',
@@ -2078,9 +2078,9 @@ export default {
         description: 'Content pack ID',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getFields: {
     path: '/system/fields',
@@ -2093,9 +2093,9 @@ export default {
         description: 'Maximum number of fields to return. Set to 0 for all fields.',
         required: false,
         paramType: 'query',
-        type: 'Integer'
-      }
-    ]
+        type: 'Integer',
+      },
+    ],
   },
   createJob: {
     path: '/system/jobs',
@@ -2108,16 +2108,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'TriggerRequest'
-      }
-    ]
+        type: 'TriggerRequest',
+      },
+    ],
   },
   getJobs: {
     path: '/system/jobs',
     summary: 'List currently running jobs',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getJob: {
     path: '/system/jobs/{jobId}',
@@ -2130,16 +2130,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getMetrics: {
     path: '/system/metrics',
     summary: 'Get all metrics',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getMetric: {
     path: '/system/metrics/{metricName}',
@@ -2152,9 +2152,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getMetricsMultiple: {
     path: '/system/metrics/multiple',
@@ -2167,16 +2167,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'MetricsReadRequest'
-      }
-    ]
+        type: 'MetricsReadRequest',
+      },
+    ],
   },
   getMetricsNames: {
     path: '/system/metrics/names',
     summary: 'Get all metrics keys/names',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getMetricsNamespace: {
     path: '/system/metrics/namespace/{namespace}',
@@ -2189,9 +2189,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getMetricsHistory: {
     path: '/system/metrics/{metricName}/history',
@@ -2204,23 +2204,23 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'after',
         description: 'Only values for after this UTC timestamp (1970 epoch)',
         required: false,
         paramType: 'query',
-        type: 'Long'
-      }
-    ]
+        type: 'Long',
+      },
+    ],
   },
   getPermissions: {
     path: '/system/permissions',
     summary: 'Get all available user permissions.',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getPermissionsReader: {
     path: '/system/permissions/reader/{username}',
@@ -2233,16 +2233,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   shutdownNode: {
     path: '/system/shutdown/shutdown',
     summary: 'Shutdown this node gracefully.',
     notes: 'Attempts to process all buffered and cached messages before exiting, shuts down inputs first to make sure that no new messages are accepted.',
     method: 'POST',
-    parameters: []
+    parameters: [],
   },
   createSession: {
     path: '/system/sessions',
@@ -2255,9 +2255,9 @@ export default {
         description: 'Username and credentials',
         required: true,
         paramType: 'body',
-        type: 'SessionCreateRequest'
-      }
-    ]
+        type: 'SessionCreateRequest',
+      },
+    ],
   },
   removeSession: {
     path: '/system/sessions/{sessionId}',
@@ -2270,23 +2270,23 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getServiceManager: {
     path: '/system/serviceManager',
     summary: 'List current status of ServiceManager',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getRadios: {
     path: '/system/radios',
     summary: 'List all active radios in this cluster.',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getRadio: {
     path: '/system/radios/{radioId}',
@@ -2299,9 +2299,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createRadioInput: {
     path: '/system/radios/{radioId}/inputs',
@@ -2314,16 +2314,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'RegisterInputRequest'
-      }
-    ]
+        type: 'RegisterInputRequest',
+      },
+    ],
   },
   getRadioInputs: {
     path: '/system/radios/{radioId}/inputs',
@@ -2336,9 +2336,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   removeRadioInput: {
     path: '/system/radios/{radioId}/inputs/{inputId}',
@@ -2351,16 +2351,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'inputId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   pingRadio: {
     path: '/system/radios/{radioId}/ping',
@@ -2373,16 +2373,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'PingRequest'
-      }
-    ]
+        type: 'PingRequest',
+      },
+    ],
   },
   createInputStaticField: {
     path: '/system/inputs/{inputId}/staticfields',
@@ -2395,16 +2395,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateStaticFieldRequest'
-      }
-    ]
+        type: 'CreateStaticFieldRequest',
+      },
+    ],
   },
   removeInputStaticField: {
     path: '/system/inputs/{inputId}/staticfields/{key}',
@@ -2417,23 +2417,23 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'inputId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getStreams: {
     path: '/streams',
     summary: 'Get a list of all streams',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getStream: {
     path: '/streams/{streamId}',
@@ -2446,9 +2446,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createStream: {
     path: '/streams',
@@ -2461,23 +2461,23 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateStreamRequest'
-      }
-    ]
+        type: 'CreateStreamRequest',
+      },
+    ],
   },
   getStreamsEnabled: {
     path: '/streams/enabled',
     summary: 'Get a list of all enabled streams',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getStreamAllThroughput: {
     path: '/stream/throughput',
     summary: 'Current throughput of all visible streams on this node in messages per second',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getStreamThroughput: {
     path: '/streams/{streamId}/throughput',
@@ -2490,9 +2490,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateStream: {
     path: '/streams/{streamId}',
@@ -2505,16 +2505,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'UpdateStreamRequest'
-      }
-    ]
+        type: 'UpdateStreamRequest',
+      },
+    ],
   },
   removeStream: {
     path: '/streams/{streamId}',
@@ -2527,9 +2527,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   cloneStream: {
     path: '/streams/{streamId}/clone',
@@ -2542,16 +2542,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CloneStreamRequest'
-      }
-    ]
+        type: 'CloneStreamRequest',
+      },
+    ],
   },
   pauseStream: {
     path: '/streams/{streamId}/pause',
@@ -2564,9 +2564,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   resumeStream: {
     path: '/streams/{streamId}/resume',
@@ -2579,9 +2579,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   testMatchStream: {
     path: '/streams/{streamId}/testMatch',
@@ -2594,58 +2594,58 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'Map'
-      }
-    ]
+        type: 'Map',
+      },
+    ],
   },
   getClusterStats: {
     path: '/system/cluster/stats',
     summary: 'Cluster status information.',
     notes: 'This resource returns information about the Graylog cluster.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getClusterStatsElasticsearch: {
     path: '/system/cluster/stats/elasticsearch',
     summary: 'Elasticsearch information.',
     notes: 'This resource returns information about the Elasticsearch Cluster.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getClusterStatsMongo: {
     path: '/system/cluster/stats/mongo',
     summary: 'MongoDB information.',
     notes: 'This resource returns information about MongoDB.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getBuffers: {
     path: '/system/buffers',
     summary: 'Get current utilization of buffers and caches of this node.',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getBuffersClasses: {
     path: '/system/buffers/classes',
     summary: 'Get classnames of current buffer implementations.',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getGroks: {
     path: '/system/grok',
     summary: 'Get all existing grok patterns',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getGrok: {
     path: '/system/grok/{patternId}',
@@ -2658,9 +2658,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createGrok: {
     path: '/system/grok',
@@ -2673,9 +2673,9 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'GrokPatternSummary'
-      }
-    ]
+        type: 'GrokPatternSummary',
+      },
+    ],
   },
   createGroks: {
     path: '/system/grok',
@@ -2688,9 +2688,9 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'Array'
-      }
-    ]
+        type: 'Array',
+      },
+    ],
   },
   updateGrok: {
     path: '/system/grok/{patternId}',
@@ -2703,30 +2703,30 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'pattern',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'GrokPatternSummary'
-      }
-    ]
+        type: 'GrokPatternSummary',
+      },
+    ],
   },
   removeGrok: {
     path: '/system/grok/{patternId}',
     summary: 'Remove an existing pattern by id',
     notes: '',
     method: 'DELETE',
-    parameters: []
+    parameters: [],
   },
   getLDAPSettings: {
     path: '/system/ldap/settings',
     summary: 'Get the LDAP configuration if it is configured',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   updateLDAPSettings: {
     path: '/system/ldap/settings',
@@ -2739,16 +2739,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'LdapSettingsRequest'
-      }
-    ]
+        type: 'LdapSettingsRequest',
+      },
+    ],
   },
   removeLDAPSettings: {
     path: '/system/ldap/settings',
     summary: 'Remove the LDAP configuration',
     notes: '',
     method: 'DELETE',
-    parameters: []
+    parameters: [],
   },
   testLDAPSettings: {
     path: '/system/ldap/test',
@@ -2761,23 +2761,23 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'LdapTestConfigRequest'
-      }
-    ]
+        type: 'LdapTestConfigRequest',
+      },
+    ],
   },
   getLoggers: {
     path: '/system/loggers',
     summary: 'List all loggers and their current levels',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getLoggersSubsystems: {
     path: '/system/loggers/subsystems',
     summary: 'List all logger subsystems and their current levels',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   setLoggersSubsystemsLevel: {
     path: '/system/loggers/subsystems/{subsystem}/level/{level}',
@@ -2790,16 +2790,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'level',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   setLoggersLevel: {
     path: '/system/loggers/{loggerName}/level/{level}',
@@ -2812,37 +2812,37 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'level',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getJournal: {
     path: '/system/journal',
     summary: 'Get current state of the journal on this node.',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getIndicesRanges: {
     path: '/system/indices/ranges',
     summary: 'Get a list of all index ranges',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   rebuildIndicesRanges: {
     path: '/system/indices/ranges/rebuild',
     summary: 'Rebuild/sync index range information.',
     notes: 'This triggers a systemjob that scans every index and stores meta information about what indices contain messages in what timeranges. It atomically overwrites already existing meta information.',
     method: 'POST',
-    parameters: []
+    parameters: [],
   },
   createInput: {
     path: '/system/inputs',
@@ -2855,16 +2855,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'InputLaunchRequest'
-      }
-    ]
+        type: 'InputLaunchRequest',
+      },
+    ],
   },
   getInputs: {
     path: '/system/inputs',
     summary: 'Get all inputs of this node',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getInput: {
     path: '/system/inputs/{inputId}',
@@ -2877,9 +2877,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateInput: {
     path: '/system/inputs/{inputId}',
@@ -2892,16 +2892,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'InputLaunchRequest'
+        type: 'InputLaunchRequest',
       },
       {
         name: 'inputId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   removeInput: {
     path: '/system/inputs/{inputId}',
@@ -2914,9 +2914,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   launchInput: {
     path: '/system/inputs/{inputId}/launch',
@@ -2929,9 +2929,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   restartInput: {
     path: '/system/inputs/{inputId}/restart',
@@ -2944,9 +2944,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   stopInput: {
     path: '/system/inputs/{inputId}/stop',
@@ -2959,16 +2959,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getNotifications: {
     path: '/system/notifications',
     summary: 'Get all active notifications',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   removeNotification: {
     path: '/system/notifications/{notificationType}',
@@ -2981,16 +2981,16 @@ export default {
         description: '',
         required: false,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getOutputs: {
     path: '/system/outputs',
     summary: 'Get a list of all outputs',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getOutput: {
     path: '/system/outputs/{outputId}',
@@ -3003,9 +3003,9 @@ export default {
         description: 'The id of the output we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createOutput: {
     path: '/system/outputs',
@@ -3018,16 +3018,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateOutputRequest'
-      }
-    ]
+        type: 'CreateOutputRequest',
+      },
+    ],
   },
   getOutputsAvailable: {
     path: '/system/outputs/available',
     summary: 'Get all available output modules',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   updateOutput: {
     path: '/system/outputs/{outputId}',
@@ -3040,16 +3040,16 @@ export default {
         description: 'The id of the output that should be deleted',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'Map'
-      }
-    ]
+        type: 'Map',
+      },
+    ],
   },
   removeOutput: {
     path: '/system/outputs/{outputId}',
@@ -3062,16 +3062,16 @@ export default {
         description: 'The id of the output that should be deleted',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getUsers: {
     path: '/users',
     summary: 'List all users',
     notes: 'The permissions assigned to the users are always included.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getUser: {
     path: '/users/{username}',
@@ -3084,9 +3084,9 @@ export default {
         description: 'The username to return information for.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createUser: {
     path: '/users',
@@ -3099,9 +3099,9 @@ export default {
         description: 'Must contain username, full_name, email, password and a list of permissions.',
         required: true,
         paramType: 'body',
-        type: 'CreateUserRequest'
-      }
-    ]
+        type: 'CreateUserRequest',
+      },
+    ],
   },
   updateUser: {
     path: '/users/{username}',
@@ -3114,16 +3114,16 @@ export default {
         description: 'The name of the user to modify.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: 'Updated user information.',
         required: true,
         paramType: 'body',
-        type: 'ChangeUserRequest'
-      }
-    ]
+        type: 'ChangeUserRequest',
+      },
+    ],
   },
   removeUser: {
     path: '/users/{username}',
@@ -3136,9 +3136,9 @@ export default {
         description: 'The name of the user to delete.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateUserPassword: {
     path: '/users/{username}/password',
@@ -3151,16 +3151,16 @@ export default {
         description: 'The name of the user whose password to change.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: 'The old and new passwords.',
         required: true,
         paramType: 'body',
-        type: 'ChangePasswordRequest'
-      }
-    ]
+        type: 'ChangePasswordRequest',
+      },
+    ],
   },
   updateUserPermissions: {
     path: '/users/{username}/permissions',
@@ -3173,16 +3173,16 @@ export default {
         description: 'The name of the user to modify.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: 'The list of permissions to assign to the user.',
         required: true,
         paramType: 'body',
-        type: 'PermissionEditRequest'
-      }
-    ]
+        type: 'PermissionEditRequest',
+      },
+    ],
   },
   removeUserPermissions: {
     path: '/users/{username}/permissions',
@@ -3195,9 +3195,9 @@ export default {
         description: 'The name of the user to modify.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateUserPreferences: {
     path: '/users/{username}/preferences',
@@ -3210,16 +3210,16 @@ export default {
         description: 'The name of the user to modify.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: 'The map of preferences to assign to the user.',
         required: true,
         paramType: 'body',
-        type: 'UpdateUserPreferences'
-      }
-    ]
+        type: 'UpdateUserPreferences',
+      },
+    ],
   },
   getUserTokens: {
     path: '/users/{username}/tokens',
@@ -3232,9 +3232,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createUserToken: {
     path: '/users/{username}/tokens/{name}',
@@ -3247,16 +3247,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'name',
         description: 'Descriptive name for this token (e.g. "cronjob") ',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   removeUserToken: {
     path: '/users/{username}/tokens/{token}',
@@ -3269,58 +3269,58 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'access token',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getStats: {
     path: '/system/stats',
     summary: 'System information about this node.',
     notes: 'This resource returns information about the system this node is running on.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getStatsFs: {
     path: '/system/stats/fs',
     summary: 'Filesystem information about this node.',
     notes: 'This resource returns information about the filesystems of this node.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getStatsJvm: {
     path: '/system/stats/jvm',
     summary: 'JVM information about this node.',
     notes: 'This resource returns information about the Java Virtual Machine of this node.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getStatsNetwork: {
     path: '/system/stats/network',
     summary: 'Networking information about this node.',
     notes: 'This resource returns information about the networking system this node is running with.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getStatsOs: {
     path: '/system/stats/os',
     summary: 'OS information about this node.',
     notes: 'This resource returns information about the operating system this node is running on.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getStatsProcess: {
     path: '/system/stats/process',
     summary: 'Process information about this node.',
     notes: 'This resource returns information about the process this node is running as.',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   createSearchSaved: {
     path: '/search/saved',
@@ -3333,16 +3333,16 @@ export default {
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateSavedSearchRequest'
-      }
-    ]
+        type: 'CreateSavedSearchRequest',
+      },
+    ],
   },
   getSearchSavedAll: {
     path: '/search/saved',
     summary: 'Get a list of all saved searches',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getSearchSaved: {
     path: '/search/saved/{searchId}',
@@ -3355,9 +3355,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   updateSearchSaved: {
     path: '/search/saved/{searchId}',
@@ -3370,16 +3370,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateSavedSearchRequest'
-      }
-    ]
+        type: 'CreateSavedSearchRequest',
+      },
+    ],
   },
   removeSearchSaved: {
     path: '/search/saved/{searchId}',
@@ -3392,9 +3392,9 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getStreamRules: {
     path: '/streams/{streamid}/rules',
@@ -3407,9 +3407,9 @@ export default {
         description: 'The id of the stream whose stream rule we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getStreamRule: {
     path: '/streams/{streamid}/rules/{streamRuleId}',
@@ -3422,16 +3422,16 @@ export default {
         description: 'The id of the stream whose stream rule we want.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'streamRuleId',
         description: 'The stream rule id we are getting',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   createStreamRule: {
     path: '/streams/{streamid}/rules',
@@ -3444,16 +3444,16 @@ export default {
         description: 'The stream id this new rule belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateStreamRuleRequest'
-      }
-    ]
+        type: 'CreateStreamRuleRequest',
+      },
+    ],
   },
   updateStreamRule: {
     path: '/streams/{streamid}/rules/{streamRuleId}',
@@ -3466,23 +3466,23 @@ export default {
         description: 'The stream id this rule belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'streamRuleId',
         description: 'The stream rule id we are updating',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'JSON body',
         description: '',
         required: true,
         paramType: 'body',
-        type: 'CreateStreamRuleRequest'
-      }
-    ]
+        type: 'CreateStreamRuleRequest',
+      },
+    ],
   },
   removeStreamRule: {
     path: '/streams/{streamid}/rules/{streamRuleId}',
@@ -3495,23 +3495,23 @@ export default {
         description: 'The stream id this new rule belongs to.',
         required: true,
         paramType: 'path',
-        type: 'String'
+        type: 'String',
       },
       {
         name: 'streamRuleId',
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getSystemCollectors: {
     path: '/system/collectors',
     summary: 'Lists all existing collector registrations',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
 
   getSystemCollector: {
@@ -3525,16 +3525,16 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getInputsTypes: {
     path: '/system/inputs/types',
     summary: 'Get all available input types of this node',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getInputsType: {
     path: '/system/inputs/types/{inputType}',
@@ -3547,37 +3547,37 @@ export default {
         description: '',
         required: true,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getDeflector: {
     path: '/system/deflector',
     summary: 'Get current deflector status',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getDeflectorConfig: {
     path: '/system/deflector/config',
     summary: 'Get deflector configuration. Only available on master nodes',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   nextDeflectorCycle: {
     path: '/system/deflector/cycle',
     summary: 'Cycle deflector to new/next index',
     notes: '',
     method: 'POST',
-    parameters: []
+    parameters: [],
   },
   getLoadBalancerStatus: {
     path: '/system/lbstatus',
     summary: 'Get status of this graylog2-server node for load balancers. Returns either ALIVE with HTTP 200 or DEAD with HTTP 503',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   updateLoadBalancerStatusOverride: {
     path: '/system/lbstatus/override/{status}',
@@ -3590,16 +3590,16 @@ export default {
         description: '',
         required: false,
         paramType: 'path',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getSystemPlugins: {
     path: '/system/plugins',
     summary: 'List all installed plugins on this node',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   getSystemMessages: {
     path: '/system/messages',
@@ -3612,30 +3612,30 @@ export default {
         description: 'Page',
         required: false,
         paramType: 'query',
-        type: 'Integer'
-      }
-    ]
+        type: 'Integer',
+      },
+    ],
   },
   pauseSystemProcessing: {
     path: '/system/processing/pause',
     summary: 'Pauses message processing',
     notes: '',
     method: 'PUT',
-    parameters: []
+    parameters: [],
   },
   resumeSystemProcessing: {
     path: '/system/processing/resume',
     summary: 'Resume message processing',
     notes: '',
     method: 'PUT',
-    parameters: []
+    parameters: [],
   },
   getThroughput: {
     path: '/system/throughput',
     summary: 'Current throughput of this node in messages per second',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   createDebugEventsCluster: {
     path: '/system/debug/events/cluster',
@@ -3648,16 +3648,16 @@ export default {
         description: '',
         required: false,
         paramType: 'body',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getDebugEventsCluster: {
     path: '/system/debug/events/cluster',
     summary: 'Show last received cluster debug event',
     notes: '',
     method: 'GET',
-    parameters: []
+    parameters: [],
   },
   createDebugEventsLocal: {
     path: '/system/debug/events/local',
@@ -3670,15 +3670,15 @@ export default {
         description: '',
         required: false,
         paramType: 'body',
-        type: 'String'
-      }
-    ]
+        type: 'String',
+      },
+    ],
   },
   getDebugEventsLocal: {
     path: '/system/debug/events/local',
     summary: 'Show last received local debug event',
     notes: '',
     method: 'GET',
-    parameters: []
-  }
+    parameters: [],
+  },
 };
